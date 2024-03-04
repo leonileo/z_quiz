@@ -1,40 +1,68 @@
 const questions = [
     {
-       question: "ዘውድ የት ይገኛል?",
+       question: "ከሚከተሉት ውስጥ የኢትዮጵያ ባህላዊ የቤት ውስጥ የሙዚቃ መሳሪያ የትኛው ነው?",
        answers: [
-           { choice: "A", text: "23", correct: false },
-           { choice: "B", text: "22", correct: true },
-           { choice: "C", text: "24", correct: false },
-           { choice: "D", text: "25", correct: false },
+           { choice: "ሀ", text: " ፒያኖ", correct: false },
+           { choice: "ለ", text: " ጊታር", correct: false },
+           { choice: "ሐ", text: " ማሲንቆ", correct: true },
+           { choice: "መ", text: " ትራንፔት?", correct: false },
        ]
     },
     {
-       question: "Which is largest animal in the world?",
-       answers: [
-           { choice: "A", text: "Shark", correct: false },
-           { choice: "B", text: "Gobi", correct: false },
-           { choice: "C", text: "Sahara", correct: false },
-           { choice: "D", text: "Antarctica", correct: true },
-       ] 
-    },
-    {
-       question: "Which is the smallest continent in the world?",
-       answers: [
-           { choice: "A", text: "Asia", correct: false },
-           { choice: "B", text: "Austrsalia", correct: true },
-           { choice: "C", text: "Arctic", correct: false },
-           { choice: "D", text: "Africa", correct: false },
-       ]
-    },
-    {
-       question: "Which is the smallest continent in the world?",
-       answers: [
-           { choice: "A", text: "Asia", correct: false },
-           { choice: "B", text: "Austrsalia", correct: true },
-           { choice: "C", text: "Arctic", correct: false },
-           { choice: "D", text: "Africa", correct: false },
-       ]
-    },
+        question: "የኢትዮጵያ ባህላዊ የቡና ሥነ ሥርዓት ስንት ጊዜ ይፈላል?",
+        answers: [
+            { choice: "ሀ", text: " አንድ", correct: false },
+            { choice: "ለ", text: " አራት", correct: false },
+            { choice: "ሐ", text: " ሁለት", correct: false },
+            { choice: "መ", text: " ሶስት?", correct: true },
+        ]
+     },
+
+     {
+        question: "በአለት በተፈለፈሉ አብያተ ክርስቲያናት የምትታወቀው የኢትዮጵያ ታሪካዊ ከተማ የትኛው ነው?",
+        answers: [
+            { choice: "ሀ", text: " አዲስ አበባ", correct: false },
+            { choice: "ለ", text: " ላሊበላ", correct: true },
+            { choice: "ሐ", text: " አክሱም", correct: false },
+            { choice: "መ", text: " ጎንደር?", correct: false },
+        ]
+     },
+     {
+        question: " በርካታ የኦሎምፒክ የወርቅ ሜዳሊያዎችን ያስገኘው ታዋቂው ኢትዮጵያዊ የረጅም ርቀት ሯጭ ማን ነው?",
+        answers: [
+            { choice: "ሀ", text: " ኤሊዩድ ኪፕቾጌ", correct: false },
+            { choice: "ለ", text: " ሃይለ ገብረስላሴ", correct: true },
+            { choice: "ሐ", text: " ዩሴይን ቦልት", correct: false },
+            { choice: "መ", text: " ሞ ፋራህ?", correct: false },
+        ]
+     },
+     {
+        question: "በሴቶች 10,000 ሜትር የአለም ክብረ ወሰን ያለው የትኛው ኢትዮጵያዊ አትሌት ነው?",
+        answers: [
+            { choice: "ሀ", text: " ጥሩነሽ ዲባባ", correct: true },
+            { choice: "ለ", text: " ፍሎረንስ ግሪፊዝ ጆይነር", correct: false },
+            { choice: "ሐ", text: " ሼሊ-አን ፍሬዘር-ፕራይስ", correct: false },
+            { choice: "መ", text: " ካስተር ሴሜንያ?", correct: false },
+        ]
+     },
+     {
+        question: "የኢትዮጵያ አዲስ አመት ምን ይባላል?",
+        answers: [
+            { choice: "ሀ", text: " ገና", correct: false },
+            { choice: "ለ", text: " ፋሲካ", correct: false },
+            { choice: "ሐ", text: " ጥምቀት", correct: false },
+            { choice: "መ", text: " እንቁጣጣሽ?", correct: true },
+        ]
+     },
+     {
+        question: "በ19ኛው ክፍለ ዘመን ሀገሪቱን በማዘመን የሚታወቁት የኢትዮጵያ ንጉሠ ነገሥት የትኛው ነው?",
+        answers: [
+            { choice: "ሀ", text: " ዳግማዊ አፄ ምኒልክ", correct: true },
+            { choice: "ለ", text: " ዳግማዊ አፄ ኃይለ ሥላሴ", correct: false },
+            { choice: "ሐ", text: " ዳግማዊ አፄ ቴዎድሮስ", correct: false },
+            { choice: "መ", text: " ዳግማዊ አፄ ዮሐንስ ፬ኛ?", correct: false },
+        ]
+     },
     ];
     const questionElement = document.getElementById("question");
     const answerButtons = document.getElementById("answer-buttons");
