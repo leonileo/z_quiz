@@ -148,8 +148,9 @@ const questions = [
           }
            function showscore(){
                resetState();
-               questionElement.innerHTML = `ከ ${questions.
-                   length} ጥያቄዎች ${score} መልሰዋል!`;
+               questionElement.innerHTML = score < 1 ? `ከ ${questions.
+                length} ጥያቄዎች ምንም አልመለሱም!` : `ከ ${questions.
+                    length} ጥያቄዎች ${score} መልሰዋል!`;
                    nextButton.innerHTML = "ድጋሜ ይሞክሩ";
                    prevButton.style.display = "none";
             }
